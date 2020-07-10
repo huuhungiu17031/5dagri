@@ -1,0 +1,28 @@
+/* Services */
+
+.service_heading {
+    margin: 15px 0;
+    text-transform: none;
+    color: var(--secondary-color);
+}
+
+.page_section {
+    padding: 100px 0;
+}
+
+.page_section h2.section_heading {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 40px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+
+.page_section h3.section_subheading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: var(--secondary-font);
+}

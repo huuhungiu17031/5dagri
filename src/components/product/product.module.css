@@ -1,0 +1,22 @@
+/* Products */
+
+.product_item {
+    right: 0;
+    margin: 0 0 15px;
+}
+
+.section_heading {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 40px;
+    color: var(--secondary-color);
+}
+
+.section_subheading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: var(--secondary-font);
+}

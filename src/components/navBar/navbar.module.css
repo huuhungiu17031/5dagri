@@ -1,0 +1,134 @@
+/*-------------NAVIGATION-BAR------------------*/
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    min-height: 10vh;
+    align-items: center;
+    color: white;
+    transition: all 2s;
+    position: absolute;
+    width: 100%;
+}
+
+.brandTitle img {
+    width: 370px;
+    height: 50px;
+}
+
+.navbarLinks {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    height: 100%;
+}
+
+.toggleButton {
+    display: none;
+}
+
+.toggleButton div {
+    height: 5px;
+    width: 25px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease-in;
+}
+
+.navbarLinks li {
+    min-width: 100px;
+    list-style: none;
+    transition: all 1s;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.navbarLinks li a {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;
+    transition: all 1s;
+}
+
+.borderToggle {
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.toggle .line1 {
+    transform: rotate(90deg) translateX(10px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(360deg) translateY(-10px);
+}
+
+.navbarLinks li:hover a {
+    color: rgb(161, 221, 112);
+}
+
+.scrolled_Nav {
+    transition: all 2s;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(40, 40, 40, 0.8);
+    z-index: 100;
+}
+
+.scrolled_Nav+.contentIntro {
+    padding-top: 60px;
+}
+
+
+/*-------------REPONSIVE NAVBARS------------------*/
+
+@media screen and (max-width:1024px) {
+    .navbarLinks {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navbarLinks {
+        position: absolute;
+        right: 0;
+        z-index: 10;
+        height: 90vh;
+        top: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateY(-200%);
+        transition: transform 1s;
+        background-color: rgba(40, 40, 40, 0.8);
+        width: 100%;
+    }
+    .navbarLinks li {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .navbarLinks li a {
+        width: 100%;
+    }
+    .toggleButton {
+        display: block;
+        cursor: pointer;
+    }
+    .navbarLinks.active {
+        transform: translateX(0);
+    }
+}

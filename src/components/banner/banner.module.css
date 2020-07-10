@@ -1,0 +1,35 @@
+/*-------------BANNER------------------*/
+
+.Banner {
+    margin-top: -90px;
+    position: relative;
+}
+
+.Banner .container {
+    background: rgba(255, 255, 255, .5);
+    padding: 15px;
+}
+
+.imageHover {
+    overflow: hidden;
+}
+
+.imageHover img {
+    width: 100%;
+    height: 300px;
+    transition: all 1s;
+}
+
+.imageHover img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .Banner {
+        display: none;
+    }
+}
+
+
+/*-------------END BANNER------------------*/
